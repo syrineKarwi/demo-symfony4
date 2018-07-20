@@ -2,8 +2,9 @@
 namespace App\Controller; 
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route ;
 use Symfony\Component\HttpFoundation\Response ; 
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class ArticleController 
+class ArticleController extends AbstractController
 
 {
          /**
@@ -19,7 +20,15 @@ class ArticleController
          */
         public function show ($id)
         {
-            return new Response(sprintf('artcile  %s',$id));
+            $comments =[
+              'coment1 hfrieesiulsqeuuuuuuuuuuuuuuuuuu',
+              'coment2 gyy::::::::::::::::::::fffffffff' ,
+              'coment3 yzulzteattyezaaaaaaaaaaaaaeyzaez'  ,
+            ];
+            dump($id,$this);
+         return $this->render('article/show.html.twig',[
+             'comments' => $comments ,
+             ]);
         }
 }
 

@@ -1,0 +1,23 @@
+{% extends 'base.html.twig'  %}
+
+{% block body %}
+<div>
+    <p>
+        hshjdfkjlfdssdhfljdlmlfjfssfhgdg:q:k:
+    </p>
+    <p>
+        hshjdfkjlfdssdhfljdlmlfjfssfhgdg:q:k:
+    </p>
+    <p>
+        hshjdfkjlfdssdhfljdlmlfjfssfhgdg:q:k:
+    </p>
+</div>
+<h2>  {{ comments|length }} comments</h2>
+
+<ul>
+
+    {% for comment in comments %}
+        <li> {{ comment }} </li>
+    {% endfor %}
+</ul>
+{% endblock %}
