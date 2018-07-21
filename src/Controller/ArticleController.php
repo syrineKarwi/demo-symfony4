@@ -25,7 +25,7 @@ class ArticleController extends AbstractController
               'coment2 gyy::::::::::::::::::::fffffffff' ,
               'coment3 yzulzteattyezaaaaaaaaaaaaaeyzaez'  ,
             ];
-            dump($id,$this);
+            //dump($id,$this);
          return $this->render('article/show.html.twig',[
              'comments' => $comments ,
              ]);
